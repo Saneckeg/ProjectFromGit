@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cf7f396-0860-4569-a600-7d0efe5179da">
+  <producedTypes>
+    <objectType typeId="8a87e7d5-5d8f-45c6-94da-8cd8b8d50322" valueTypeId="809938d3-db76-402f-93f6-9bc09d053f81"/>
+    <refType typeId="15b19746-8ca9-4b0e-9461-94ea38fdad80" valueTypeId="75fda911-af2b-4ccb-8458-805303bbc02d"/>
+    <selectionType typeId="150a746d-4ca4-4c73-9555-628a988303a2" valueTypeId="291f72e4-abfd-4ff8-bda9-a7df47115cf2"/>
+    <listType typeId="bbdb7f3b-4791-4b97-91ee-b59161470da2" valueTypeId="0fee7e7a-6888-4c25-a16b-45561b5106d7"/>
+    <managerType typeId="89eb5b05-5213-4efd-9c4d-50fba3fa367e" valueTypeId="52d428fb-105f-4217-a59e-d36032d7ce88"/>
+  </producedTypes>
+  <name>ОкладСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оклад сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОкладСотрудников.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Оклад сотрудников</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОкладСотрудников.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.Зарплата</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="f996bf36-c08a-424b-8a49-5e6e08f177cd">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="56d94400-7dae-4be7-bd48-4a28dffb4cc0">
+    <producedTypes>
+      <objectType typeId="5f102f77-08ea-4a03-abcd-94030eed6807" valueTypeId="0cebeb02-6135-4a63-bae8-0b13f4b45743"/>
+      <rowType typeId="bce96b44-c3cd-4680-be24-55db9a315d29" valueTypeId="ca5fac9f-92b8-418f-8f12-298912925848"/>
+    </producedTypes>
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <attributes uuid="37e7941c-0d9d-4f6f-9d66-6d6bbbc6f03b">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d91acaeb-e40b-4e3f-b9bd-2f0d50775669">
+      <name>Оклад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оклад</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

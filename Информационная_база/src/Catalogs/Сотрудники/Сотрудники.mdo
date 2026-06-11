@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f76616d-bcb5-440a-9d7e-651e16efa7d0">
+  <producedTypes>
+    <objectType typeId="1fb27e9e-9ad2-4527-98a1-5e3e482831ee" valueTypeId="d37a6e61-5270-4d69-9af6-c6e736e2cd20"/>
+    <refType typeId="a5980022-5cec-4999-8659-e3da45671a84" valueTypeId="96960716-3380-45f0-a8bb-46489798f411"/>
+    <selectionType typeId="3d0e845a-b532-41c3-a351-deef621ced37" valueTypeId="24c3569e-504f-481c-ae06-65370e4d8f94"/>
+    <listType typeId="6ad42ee6-a94a-45a1-a59a-0c7ee03c3de1" valueTypeId="3df5f64d-5831-45f8-998f-eeae1678b370"/>
+    <managerType typeId="55032e27-036e-4dfb-8583-22a2cd0f09e7" valueTypeId="4fda0140-c8b3-4477-8a5a-b4cf8b3cfb56"/>
+  </producedTypes>
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Сотрудники.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="86db22ba-b016-40c6-9fe8-6dd671ba8773">
+    <name>ТекущийОклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="057f2929-bb14-4b75-8c7a-7bcb5ef3e962">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dabee89c-dc9b-4470-a840-95c35a1b4281">
+  <producedTypes>
+    <selectionType typeId="fc3617ff-e892-4f8a-9a35-458d50c0409f" valueTypeId="6109d73b-1d67-41a4-8245-c5d77a27e8d2"/>
+    <listType typeId="ab8ed2d4-a1f2-42a4-9fc6-df090c3f93d2" valueTypeId="ee4267d8-43c3-435f-9bb4-a4a7cdd3bd3c"/>
+    <managerType typeId="3cdf2f64-cafc-4483-b8c4-0dfc55b7ac3f" valueTypeId="195e59e8-1f8c-47c5-8dcf-d3dd4652ad03"/>
+    <recordSetType typeId="fe56277e-f010-49c1-ba20-4252fe33d89c" valueTypeId="25f9ab5a-fb42-4d34-b835-cd5c01d37f7c"/>
+    <recordKeyType typeId="ff540da4-1ebe-4fb3-9db9-41e694b8fa74" valueTypeId="5ba38a04-477f-48bf-87f1-0279e79c5cc7"/>
+    <recordType typeId="057aff76-a208-4301-8afa-2fbd3c23f1fc" valueTypeId="6801a5df-fbb5-4549-bf85-173062e62e6e"/>
+    <recordManagerType typeId="936f09f5-a5ad-4e93-906c-1b7269a02535" valueTypeId="bb870532-bd5f-409a-9a5e-475938ff4d58"/>
+  </producedTypes>
+  <name>Зарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4f531941-1d43-4316-93d5-7d8660c2c6cb">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="89ee3b99-e084-47c3-b148-a33499eaa5ce">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
